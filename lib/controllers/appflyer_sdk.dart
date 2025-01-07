@@ -20,4 +20,10 @@ class AppsFlyerSDK {
       registerConversionDataCallback: true,
     );
   }
+
+  Future<bool?> logEvent(
+      {required String event, required Map<dynamic, dynamic> value}) {
+    print('debug: af -------- $event, $value');
+    return appsflyerSdk.logEvent(event, value);
+  }
 }

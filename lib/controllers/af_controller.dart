@@ -25,7 +25,7 @@ class AFController extends GetxController {
   Future<void> initAF() async {
     appsflyerSDK.option();
     appsflyerSDK.init();
-    result.value = 'https://m.s7s7c.com';
+    result.value = 'https://m.s7s7c.com/com.s7.gaming';
     Get.off(() => S7Gaming());
   }
 }
